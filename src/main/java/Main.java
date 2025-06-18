@@ -9,7 +9,7 @@ public class Main {
 
         // Audio Player only supported .wav , .av , .aiff ONLY
 
-        String filePath = "src\\babydoll.wav";
+        String filePath = "src\\Aya Nakamura - Copines [Bass Boosted].wav";
         File file = new File(filePath);
 
         try(Scanner scanner = new Scanner(System.in); AudioInputStream audioStream = AudioSystem.getAudioInputStream(file)){
