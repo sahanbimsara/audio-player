@@ -7,12 +7,20 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        // CREATED BY WATCHING YOUTUBE TUTORIAL FROM "BROCODE" YOUTUBE CHANNEL
+
         // Audio Player only supported .wav , .av , .aiff ONLY
 
+        // Song Add here Drag and drop to "src"
+        // and copy file name and paste
+        // Enjoy !
+
         String filePath = "src\\Aya Nakamura - Copines [Bass Boosted].wav";
+
         File file = new File(filePath);
 
-        try(Scanner scanner = new Scanner(System.in); AudioInputStream audioStream = AudioSystem.getAudioInputStream(file)){
+        try(Scanner scanner = new Scanner(System.in);
+            AudioInputStream audioStream = AudioSystem.getAudioInputStream(file)){
 
             Clip clip = AudioSystem.getClip();
             clip.open(audioStream);
